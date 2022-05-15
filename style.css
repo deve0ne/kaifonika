@@ -4,6 +4,7 @@
     --text-color: black;
     --icon-color: black;
     --accent-color: seagreen;
+    --dark-accent-color: #233c23;
 
     --max-width: 1920px;
     --max-text-width: 1200px;
@@ -15,14 +16,14 @@
 }
 
 * {
-
     box-sizing: border-box;
-    font-family: Jura, serif;
-    text-decoration: none;
 }
 
-a {
-    color: var(--text-color);
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: Jura, serif;
 }
 
 button {
@@ -42,25 +43,8 @@ button:hover {
 
 header {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
-
     user-select: none;
 }
-
-body {
-    margin: 0;
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*left: 0;*/
-
-    /*width: 100%;*/
-    /*height: auto;*/
-}
-/*.page-wrapper {*/
-/*    p*/
-/*    width: 100%;*/
-/*    height: auto;*/
-/*    overflow-y: scroll;*/
-/*}*/
 
 .container {
     margin-left: auto;
@@ -72,12 +56,13 @@ body {
 }
 
 .text-container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
     max-width: var(--max-text-width);
     font-size: 1.5rem;
     text-align: justify;
+}
+
+.content-container {
+
 }
 
 header .container {
@@ -144,18 +129,73 @@ header .container {
     padding: 1rem 3rem 1rem 3rem;
 }
 
+#nav-buttons li a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
 #menu-button {
     padding: 1rem 1rem 1rem 1rem;
 }
 
 #menu-icon {
-    mask-image: url(../media/menu.svg);
+    mask-image: url(media/menu.svg);
     display: inline-block;
     height: var(--menu-icon-size);
     width: var(--menu-icon-size);
     background-color: var(--icon-color);
     mask-position: center;
 }
+
+#contacts h2{
+    /*margin-top: 0;*/
+    margin-bottom: 0.2rem;
+}
+
+/*#contacts-list {*/
+/*    font-size: 1.5rem;*/
+/*}*/
+
+/*footer {*/
+/*    background-color: var(--dark-accent-color);*/
+/*    color: white;*/
+/*    height: 6rem;*/
+/*}*/
+
+/*.footer-wrapper {*/
+/*    height: 100%;*/
+/*    display: flex;*/
+/*    flex-flow: column;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*footer p {*/
+/*    flex: 1;*/
+/*}*/
+
+/*------------Конструктор------------*/
+/*.dot {*/
+/*    position: absolute;*/
+/*    width: 64px;*/
+/*    height: 64px;*/
+/*    z-index: 2;*/
+/*}*/
+
+/*.circle {*/
+/*    cursor: pointer;*/
+/*    position: absolute;*/
+/*    width: 64px;*/
+/*    height: 64px;*/
+/*    left: 300px;*/
+/*    z-index: 2;*/
+/*}*/
+
+/*.partPicture {*/
+/*    position: absolute;*/
+/*    z-index: 1;*/
+/*}*/
+/*------------Конструктор------------*/
 
 @media only screen and (min-width: 1440px) {
     #menu-button {
